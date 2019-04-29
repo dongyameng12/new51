@@ -1,0 +1,1706 @@
+html,
+body {
+  position: relative;
+  background-color: #f9d0a3;
+  height: 100%;
+  color: #333;
+  user-select: none;
+  /* 遮罩层 */
+}
+html input,
+body input {
+  box-sizing: border-box;
+}
+html section.home,
+body section.home {
+  display: none;
+  width: 7.5rem;
+  height: 100%;
+  background: url('../images/home_01.png') no-repeat;
+  background-size: cover;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: .22rem;
+}
+html section.home > div:nth-child(1),
+body section.home > div:nth-child(1) {
+  width: 7.5rem;
+  height: 100%;
+  background: url('../images/home_03.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+html section.home > div:nth-child(2),
+body section.home > div:nth-child(2) {
+  width: 7.33rem;
+  height: 11.34rem;
+  background: url('../images/home_02.png') no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+}
+html section.home > div:nth-child(2) > div,
+body section.home > div:nth-child(2) > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 6rem;
+  height: 5.9rem;
+  background: url('../images/home_03_01.png') no-repeat;
+  background-size: cover;
+  bottom: .5rem;
+}
+html section.home > div:nth-child(2) > a,
+body section.home > div:nth-child(2) > a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: .54rem;
+  margin: auto;
+  display: inline-block;
+  width: 3.97rem;
+  height: 1.18rem;
+  background: url('../images/start.png') no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+html section.home:nth-child(3),
+body section.home:nth-child(3) {
+  width: 6.26rem;
+  height: 2.36rem;
+  box-sizing: border-box;
+}
+html section.enter,
+body section.enter {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 7.5rem;
+  height: 100%;
+  background: url('../images/home_01.png') no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+html section.enter > div:nth-child(1),
+body section.enter > div:nth-child(1) {
+  width: 7.5rem;
+  height: 100%;
+  background: url('../images/home_03.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+html section.enter > div:nth-child(2),
+body section.enter > div:nth-child(2) {
+  width: 7.5rem;
+  height: 8.96rem;
+  background: url('../images/enter_03.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+html section.enter > div:nth-child(2) > div,
+body section.enter > div:nth-child(2) > div {
+  position: absolute;
+  bottom: 1.09rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 4.77rem;
+  height: 3.08rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+html section.enter > div:nth-child(2) > div .name,
+body section.enter > div:nth-child(2) > div .name {
+  width: 4.77rem;
+  height: .83rem;
+  background: url('../images/enter_01.png') no-repeat;
+  background-size: cover;
+  border: 0;
+  padding: 0 .2rem;
+}
+html section.enter > div:nth-child(2) > div > a,
+body section.enter > div:nth-child(2) > div > a {
+  display: inline-block;
+  width: 2.86rem;
+  height: .81rem;
+  background: url('../images/enter_02.png') no-repeat;
+  background-size: cover;
+}
+html section.enter > div:nth-child(2) > div > div,
+body section.enter > div:nth-child(2) > div > div {
+  font-size: .32rem;
+  color: #c93f43;
+  font-weight: bolder;
+  width: 3.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+html section.enter > div:nth-child(2) > div > div > div .select_radio,
+body section.enter > div:nth-child(2) > div > div > div .select_radio {
+  display: inline-block;
+  width: .14rem;
+  height: .14rem;
+  border-radius: 50%;
+  background-color: #c83c40;
+}
+html section.enter > div:nth-child(2) > div > div > div:nth-child(1),
+body section.enter > div:nth-child(2) > div > div > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  width: .68rem;
+  justify-content: space-between;
+}
+html section.enter > div:nth-child(2) > div > div > div:nth-child(1) > div,
+body section.enter > div:nth-child(2) > div > div > div:nth-child(1) > div {
+  width: .2rem;
+  height: .2rem;
+  border-radius: 50%;
+  border: solid 1px #761a19;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html section.enter > div:nth-child(2) > div > div > div:nth-child(2),
+body section.enter > div:nth-child(2) > div > div > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  width: .68rem;
+  justify-content: space-between;
+}
+html section.enter > div:nth-child(2) > div > div > div:nth-child(2) > div,
+body section.enter > div:nth-child(2) > div > div > div:nth-child(2) > div {
+  width: .2rem;
+  height: .2rem;
+  border-radius: 50%;
+  border: solid 1px #761a19;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html section.enter > div:nth-child(3),
+body section.enter > div:nth-child(3) {
+  width: 6.90rem;
+  height: 2.56rem;
+  position: relative;
+  z-index: 2;
+  background: url('../images/guanggo_01.png') no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: .41rem;
+}
+html section.enter > a,
+body section.enter > a {
+  display: inline-block;
+  width: 2.05rem;
+  height: .53rem;
+  background: url('../images/rule.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: .37rem;
+  right: .35rem;
+  z-index: 2;
+}
+html section.main,
+body section.main {
+  display: none;
+  height: 13.34rem;
+}
+html section.main > div,
+body section.main > div {
+  height: 100%;
+}
+html section.main > div > div,
+body section.main > div > div {
+  height: 100%;
+}
+html section.main > div > div > div:nth-child(1),
+body section.main > div > div > div:nth-child(1) {
+  margin: 0 auto;
+  width: 6.68rem;
+}
+html section.main > div > div > div:nth-child(1) > a,
+body section.main > div > div > div:nth-child(1) > a {
+  display: inline-block;
+  width: 6.68rem;
+  height: 1.57rem;
+  background: url('../images/main_banner.gif') no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 100;
+}
+html section.main > div > div > div:nth-child(2),
+body section.main > div > div > div:nth-child(2) {
+  width: 6.04rem;
+  height: 1.88rem;
+  background: url('../images/main_01.png') no-repeat;
+  background-size: cover;
+  margin: .2rem auto;
+  position: relative;
+}
+html section.main > div > div > div:nth-child(2) > span,
+body section.main > div > div > div:nth-child(2) > span {
+  display: inline-block;
+  width: 5.27rem;
+  height: .36rem;
+  background: url('../images/main_02.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  margin: auto;
+  right: 0;
+  bottom: -0.22rem;
+}
+html section.main > div > div > div:nth-child(3),
+body section.main > div > div > div:nth-child(3) {
+  width: 5.84rem;
+  margin: 0 auto;
+  padding-top: .2rem;
+  box-sizing: border-box;
+}
+html section.main > div > div > div:nth-child(3) > ul,
+body section.main > div > div > div:nth-child(3) > ul {
+  display: flex;
+  justify-content: space-between;
+}
+html section.main > div > div > div:nth-child(3) > ul > li,
+body section.main > div > div > div:nth-child(3) > ul > li {
+  text-align: center;
+  width: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html section.main > div > div > div:nth-child(3) > ul > li:nth-child(1) > p:nth-child(1),
+body section.main > div > div > div:nth-child(3) > ul > li:nth-child(1) > p:nth-child(1) {
+  width: 1.58rem;
+  height: 2.25rem;
+  background: url(../images/mainflower_01.png) no-repeat;
+  background-size: cover !important;
+}
+html section.main > div > div > div:nth-child(3) > ul > li:nth-child(2),
+body section.main > div > div > div:nth-child(3) > ul > li:nth-child(2) {
+  margin: 0 .3rem;
+}
+html section.main > div > div > div:nth-child(3) > ul > li:nth-child(2) > p:nth-child(1),
+body section.main > div > div > div:nth-child(3) > ul > li:nth-child(2) > p:nth-child(1) {
+  width: 1.58rem;
+  height: 2.25rem;
+  background: url(../images/mainflower_02.png) no-repeat;
+  background-size: cover !important;
+}
+html section.main > div > div > div:nth-child(3) > ul > li:nth-child(3) > p:nth-child(1),
+body section.main > div > div > div:nth-child(3) > ul > li:nth-child(3) > p:nth-child(1) {
+  width: 1.58rem;
+  height: 2.25rem;
+  background: url(../images/mainflower_03.png) no-repeat;
+  background-size: cover !important;
+}
+html section.main > div > div > div:nth-child(4),
+body section.main > div > div > div:nth-child(4) {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: -0.4rem;
+  margin: auto;
+  z-index: 2;
+  margin: 0 auto;
+  text-align: center;
+  background: url(../images/main_biao.png) no-repeat;
+  background-size: cover;
+  height: 3.94rem;
+  width: 7.06rem;
+}
+html section.main > div > div > div:nth-child(4) > ul,
+body section.main > div > div > div:nth-child(4) > ul {
+  position: absolute;
+  width: 5.72rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 1.89rem;
+  top: 2.03rem;
+  overflow-y: hidden;
+}
+html section.main > div > div > div:nth-child(4) > ul > li,
+body section.main > div > div > div:nth-child(4) > ul > li {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+html section.main > div > div > div:nth-child(4) > ul > li > p,
+body section.main > div > div > div:nth-child(4) > ul > li > p {
+  flex: 1;
+  height: .62rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html section.main > div > div > div:nth-child(5),
+body section.main > div > div > div:nth-child(5) {
+  width: 2.74rem;
+  height: .72rem;
+  background: url('../images/return.png') no-repeat;
+  background-size: cover;
+  margin: .1rem auto;
+  position: relative;
+  top: -0.3rem;
+  z-index: 2;
+}
+html section.main > div > div > div:nth-child(6),
+body section.main > div > div > div:nth-child(6) {
+  width: 6.69rem;
+  /* height: 100%; */
+  background: url(../images/home_03.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: .27rem;
+  z-index: 1;
+  height: -0.32rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 12.6rem;
+}
+html section.glory,
+body section.glory {
+  width: 7.5rem;
+  height: 13.34rem;
+  display: none;
+}
+html section.glory > div,
+body section.glory > div {
+  height: 100%;
+}
+html section.glory > div > div,
+body section.glory > div > div {
+  height: 100%;
+}
+html section.glory > div > div > div:nth-child(1),
+body section.glory > div > div > div:nth-child(1) {
+  width: 5.65rem;
+  height: 1.05rem;
+  background: url('../images/glory_01.png') no-repeat;
+  background-size: cover;
+  position: relative;
+  left: .17rem;
+}
+html section.glory > div > div > div:nth-child(2),
+body section.glory > div > div > div:nth-child(2) {
+  width: 4rem;
+  margin: 0 auto;
+}
+html section.glory > div > div > div:nth-child(2) > img,
+body section.glory > div > div > div:nth-child(2) > img {
+  width: 4rem;
+}
+html section.glory > div > div > div:nth-child(2) > p,
+body section.glory > div > div > div:nth-child(2) > p {
+  margin: 0 auto;
+}
+html section.glory > div > div > div:nth-child(2) > p:nth-child(1),
+body section.glory > div > div > div:nth-child(2) > p:nth-child(1) {
+  width: 4rem;
+  font-weight: bolder;
+  font-size: .34rem;
+  display: flex;
+  align-items: center;
+  margin: .1rem auto;
+}
+html section.glory > div > div > div:nth-child(3),
+body section.glory > div > div > div:nth-child(3) {
+  padding: .2rem 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 5.71rem;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+html section.glory > div > div > div:nth-child(3) > ul,
+body section.glory > div > div > div:nth-child(3) > ul {
+  display: flex;
+  width: 4.62rem;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+html section.glory > div > div > div:nth-child(3) > ul li,
+body section.glory > div > div > div:nth-child(3) > ul li {
+  width: .51rem;
+  height: .57rem;
+  background: url('../images/flower_hui.png') no-repeat;
+  background-size: cover !important;
+}
+html section.glory > div > div > div:nth-child(3) > p,
+body section.glory > div > div > div:nth-child(3) > p {
+  font-size: .24rem;
+  font-weight: bold;
+  text-align: center;
+  height: .57rem;
+  line-height: .57rem;
+}
+html section.glory > div > div > div:nth-child(3) > p > span,
+body section.glory > div > div > div:nth-child(3) > p > span {
+  font-size: .28rem;
+  color: #9b2e2e;
+}
+html section.glory > div > div > div:nth-child(4),
+body section.glory > div > div > div:nth-child(4) {
+  text-align: center;
+  font-size: .24rem;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 4.88rem;
+}
+html section.glory > div > div > div:nth-child(4) > a,
+body section.glory > div > div > div:nth-child(4) > a {
+  display: inline-block;
+  width: 2.24rem;
+  height: .59rem;
+  text-align: center;
+}
+html section.glory > div > div > div:nth-child(4) > a:nth-child(1),
+body section.glory > div > div > div:nth-child(4) > a:nth-child(1) {
+  color: #c5252b;
+  border: solid 2px #c5252b;
+  box-sizing: border-box;
+  line-height: .53rem;
+}
+html section.glory > div > div > div:nth-child(4) > a:nth-child(2),
+body section.glory > div > div > div:nth-child(4) > a:nth-child(2) {
+  background-color: #c5252b;
+  color: #e1c7a5;
+  line-height: .59rem;
+}
+html section.glory > div > div > div:nth-child(5),
+body section.glory > div > div > div:nth-child(5) {
+  padding-top: .37rem;
+}
+html section.glory > div > div > div:nth-child(5) > div:nth-child(1),
+body section.glory > div > div > div:nth-child(5) > div:nth-child(1) {
+  width: 5.06rem;
+  height: .59rem;
+  background: url('../images/glory_02.png') no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+html section.glory > div > div > div:nth-child(5) > div:nth-child(2):nth-child(2),
+body section.glory > div > div > div:nth-child(5) > div:nth-child(2):nth-child(2) {
+  display: flex;
+  justify-content: center;
+  margin: .36rem auto 0;
+  width: 5.55rem;
+  font-size: .28rem;
+  font-weight: bolder;
+}
+html section.glory > div > div > div:nth-child(5) > div:nth-child(2):nth-child(2) > p,
+body section.glory > div > div > div:nth-child(5) > div:nth-child(2):nth-child(2) > p {
+  flex: 1;
+  text-align: center;
+  color: #203f84;
+}
+html section.glory > div > div > div:nth-child(5) > div:nth-child(3) > ul,
+body section.glory > div > div > div:nth-child(5) > div:nth-child(3) > ul {
+  height: 2.1rem;
+  overflow-y: scroll;
+}
+html section.glory > div > div > div:nth-child(5) > div:nth-child(3) > ul > li,
+body section.glory > div > div > div:nth-child(5) > div:nth-child(3) > ul > li {
+  width: 5.55rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: .5rem;
+  line-height: .5rem;
+  margin-top: .15rem;
+}
+html section.glory > div > div > div:nth-child(5) > div:nth-child(3) > ul > li > p,
+body section.glory > div > div > div:nth-child(5) > div:nth-child(3) > ul > li > p {
+  flex: 1;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: .28rem;
+  color: #333;
+}
+html section.glory > a,
+body section.glory > a {
+  display: inline-block;
+  width: 2.05rem;
+  height: .53rem;
+  background: url(../images/rule.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: .37rem;
+  right: .35rem;
+  z-index: 2;
+}
+html section.rule,
+body section.rule {
+  display: none;
+  width: 7.5rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  z-index: 201;
+}
+html section.rule > div:nth-child(1),
+body section.rule > div:nth-child(1) {
+  width: 7.5rem;
+  height: 100%;
+  background: url('../images/home_03.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+}
+html section.rule > div:nth-child(2),
+body section.rule > div:nth-child(2) {
+  width: 7.5rem;
+  height: 11.4rem;
+}
+html section.rule > div:nth-child(2) > div,
+body section.rule > div:nth-child(2) > div {
+  height: 100%;
+}
+html section.rule > div:nth-child(2) > div > div,
+body section.rule > div:nth-child(2) > div > div {
+  height: 100%;
+}
+html section.rule > div:nth-child(2) > div > div > div,
+body section.rule > div:nth-child(2) > div > div > div {
+  width: 7rem;
+  height: 10.54rem;
+  background: url('../images/rule_bg.png') no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+html section.rule > div:nth-child(2) > div > div > div > div:nth-child(1),
+body section.rule > div:nth-child(2) > div > div > div > div:nth-child(1) {
+  width: 6.14rem;
+  height: 6.6rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 2.5rem;
+  padding: .2rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+html section.rule > div:nth-child(2) > div > div > div > div:nth-child(1) > ul,
+body section.rule > div:nth-child(2) > div > div > div > div:nth-child(1) > ul {
+  overflow: scroll;
+  text-align: justify;
+  height: 98%;
+  font-size: .24rem;
+}
+html section.rule > div:nth-child(2) > div > div > div > div:nth-child(1) > ul > li,
+body section.rule > div:nth-child(2) > div > div > div > div:nth-child(1) > ul > li {
+  line-height: .5rem;
+  margin: .1rem 0;
+}
+html section.rule > div:nth-child(2) > div > div > div > div:nth-child(2),
+body section.rule > div:nth-child(2) > div > div > div > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.86rem;
+  height: .8rem;
+  background: url('../images/sure.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: .6rem;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+html section.bind,
+body section.bind {
+  display: none;
+  height: 100%;
+}
+html section.bind > div:nth-child(1),
+body section.bind > div:nth-child(1) {
+  width: 7.5rem;
+  height: 100%;
+  background: url('../images/home_03.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+html section.bind > div:nth-child(2),
+body section.bind > div:nth-child(2) {
+  width: 7.5rem;
+  height: 100%;
+  background: url('../images/home_01.png') no-repeat;
+  background-size: cover;
+}
+html section.bind > div:nth-child(2) > div,
+body section.bind > div:nth-child(2) > div {
+  position: relative;
+}
+html section.bind > div:nth-child(2) > div > div > div > div,
+body section.bind > div:nth-child(2) > div > div > div > div {
+  width: 7.06rem;
+  height: 10.45rem;
+  margin: 0 auto;
+  background: url('../images/bind_01.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+html section.bind > div:nth-child(2) > div > div > div > div > div,
+body section.bind > div:nth-child(2) > div > div > div > div > div {
+  width: 5.55rem;
+  height: 4.8rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 5.5rem;
+  z-index: 2;
+}
+html section.bind > div:nth-child(2) > div > div > div > div > div > div,
+body section.bind > div:nth-child(2) > div > div > div > div > div > div {
+  display: flex;
+  align-items: center;
+  font-size: .28rem;
+  color: #761a19;
+  font-weight: bolder;
+}
+html section.bind > div:nth-child(2) > div > div > div > div > div > div:nth-child(1),
+body section.bind > div:nth-child(2) > div > div > div > div > div > div:nth-child(1) {
+  margin: 0 auto;
+}
+html section.bind > div:nth-child(2) > div > div > div > div > div > div:nth-child(1) > input,
+body section.bind > div:nth-child(2) > div > div > div > div > div > div:nth-child(1) > input {
+  padding-left: 1rem;
+  box-sizing: border-box;
+  padding: 0 .2rem;
+  width: 3.27rem;
+  height: .8rem;
+  font-size: .24rem;
+  border: none;
+  background: url('../images/enter_01.png') no-repeat;
+  background-size: cover;
+  margin-left: .3rem;
+}
+html section.bind > div:nth-child(2) > div > div > div > div > div > div:nth-child(2),
+body section.bind > div:nth-child(2) > div > div > div > div > div > div:nth-child(2) {
+  margin: .66rem auto 0;
+}
+html section.bind > div:nth-child(2) > div > div > div > div > div > div:nth-child(2) > input,
+body section.bind > div:nth-child(2) > div > div > div > div > div > div:nth-child(2) > input {
+  padding-left: 1rem;
+  box-sizing: border-box;
+  padding: 0 .2rem;
+  width: 2.27rem;
+  height: .8rem;
+  font-size: .24rem;
+  border: none;
+  background: url('../images/enter_01.png') no-repeat;
+  background-size: cover;
+  margin: 0 .15rem 0 .3rem;
+}
+html section.bind > div:nth-child(2) > div > div > div > div > div > div:nth-child(2) > p:nth-child(3),
+body section.bind > div:nth-child(2) > div > div > div > div > div > div:nth-child(2) > p:nth-child(3) {
+  width: 1.63rem;
+  height: .8rem;
+  background: url('../images/bind_02.jpg') no-repeat;
+  background-size: cover;
+}
+html section.bind > div:nth-child(2) > div > div > div > div > div > div:nth-child(3),
+body section.bind > div:nth-child(2) > div > div > div > div > div > div:nth-child(3) {
+  width: 2.86rem;
+  height: .8rem;
+  background: url('../images/bind_03.png') no-repeat;
+  background-size: cover;
+  margin: .99rem auto 0;
+}
+html section.fri_home,
+body section.fri_home {
+  display: none;
+  height: 100%;
+}
+html section.fri_home > div:nth-child(1),
+body section.fri_home > div:nth-child(1) {
+  width: 7.5rem;
+  height: 100%;
+  background: url('../images/home_03.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+html section.fri_home > div:nth-child(2),
+body section.fri_home > div:nth-child(2) {
+  width: 7.5rem;
+  height: 100%;
+  background: url('../images/home_01.png') no-repeat;
+  background-size: cover;
+}
+html section.fri_home > div:nth-child(2) > div,
+body section.fri_home > div:nth-child(2) > div {
+  position: relative;
+}
+html section.fri_home > div:nth-child(2) > div > div > div > div:nth-child(1),
+body section.fri_home > div:nth-child(2) > div > div > div > div:nth-child(1) {
+  position: absolute;
+  top: 3.36rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 7.06rem;
+  text-align: center;
+  margin: 0 auto;
+  font-size: .3rem;
+  font-weight: bolder;
+  color: #333;
+}
+html section.fri_home > div:nth-child(2) > div > div > div > div:nth-child(1) > div:nth-child(1),
+body section.fri_home > div:nth-child(2) > div > div > div > div:nth-child(1) > div:nth-child(1) {
+  font-size: .34rem;
+  color: #393939;
+  margin-bottom: 1rem;
+}
+html section.fri_home > div:nth-child(2) > div > div > div > div:nth-child(1) > div:nth-child(2) > p,
+body section.fri_home > div:nth-child(2) > div > div > div > div:nth-child(1) > div:nth-child(2) > p {
+  line-height: .8rem;
+}
+html section.fri_home > div:nth-child(2) > div > div > div > div:nth-child(1) > div:nth-child(2) > p:nth-child(1),
+body section.fri_home > div:nth-child(2) > div > div > div > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html section.fri_home > div:nth-child(2) > div > div > div > div:nth-child(2),
+body section.fri_home > div:nth-child(2) > div > div > div > div:nth-child(2) {
+  width: 7.06rem;
+  height: 10.35rem;
+  margin: 0 auto;
+  background: url('../images/friend_01.png') no-repeat;
+  background-size: cover;
+}
+html section.fri_home > div:nth-child(2) > div > div > div > div:nth-child(2) > a,
+body section.fri_home > div:nth-child(2) > div > div > div > div:nth-child(2) > a {
+  display: inline-block;
+}
+html section.fri_home > div:nth-child(2) > div > div > div > div:nth-child(2) > a:nth-child(1),
+body section.fri_home > div:nth-child(2) > div > div > div > div:nth-child(2) > a:nth-child(1) {
+  width: 2.86rem;
+  height: .8rem;
+  background: url('../images/firend_02.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: .88rem;
+  z-index: 2;
+}
+html section.fri_home > div:nth-child(2) > div > div > div > div:nth-child(2) > a:nth-child(2),
+body section.fri_home > div:nth-child(2) > div > div > div > div:nth-child(2) > a:nth-child(2) {
+  display: inline-block;
+  width: 2.05rem;
+  height: .53rem;
+  background: url(../images/rule.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: .37rem;
+  right: .35rem;
+  z-index: 2;
+}
+html section.pop,
+body section.pop {
+  position: fixed;
+  top: 1.13rem;
+  width: 5.5rem;
+  z-index: 200;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* 异网流量弹窗 1 3*/
+  /* 异网流量弹窗 2 */
+  /* 异网流量弹窗 3 */
+  /* 异网流量弹窗 4 */
+}
+html section.pop.worker,
+body section.pop.worker {
+  width: 5.5rem;
+  display: none;
+}
+html section.pop.worker > div:nth-child(1) > img,
+body section.pop.worker > div:nth-child(1) > img {
+  width: 5.5rem;
+}
+html section.pop.worker > div:nth-child(2),
+body section.pop.worker > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  width: 5.5rem;
+  margin: .2rem auto;
+}
+html section.pop.worker > div:nth-child(2) > div,
+body section.pop.worker > div:nth-child(2) > div {
+  text-align: center;
+  width: 2.4rem;
+}
+html section.pop.worker > div:nth-child(2) > div > p,
+body section.pop.worker > div:nth-child(2) > div > p {
+  color: #e1c9a6;
+  margin-bottom: .2rem;
+}
+html section.pop.worker > div:nth-child(2) > div > button,
+body section.pop.worker > div:nth-child(2) > div > button {
+  height: .8rem;
+  box-sizing: border-box;
+  font-size: .32rem;
+  font-weight: bolder;
+  text-align: center;
+  width: 2.4rem;
+  border: 0;
+}
+html section.pop.worker > div:nth-child(2) > div:nth-child(1) > button,
+body section.pop.worker > div:nth-child(2) > div:nth-child(1) > button {
+  border: solid .04rem #c22528;
+  color: #c22528;
+  line-height: .7rem;
+  background-color: #e1c9a6;
+}
+html section.pop.worker > div:nth-child(2) > div:nth-child(2) > button,
+body section.pop.worker > div:nth-child(2) > div:nth-child(2) > button {
+  background-color: #c22528;
+  color: #e1c9a6;
+  line-height: .8rem;
+}
+html section.pop.share_before,
+body section.pop.share_before {
+  display: none;
+  width: 5.5rem;
+  height: 5rem;
+}
+html section.pop.share_before > div > div > div,
+body section.pop.share_before > div > div > div {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html section.pop.share_before > div > div > div > p:nth-child(1) > img,
+body section.pop.share_before > div > div > div > p:nth-child(1) > img {
+  width: 4.27rem;
+  margin: 0  auto;
+}
+html section.pop.share_before > div > div > div > div,
+body section.pop.share_before > div > div > div > div {
+  flex: 1;
+  font-size: .24rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+html section.pop.share_before > div > div > div > div > p,
+body section.pop.share_before > div > div > div > div > p {
+  line-height: .5rem;
+}
+html section.pop.share_before > div > div > div > div > p:nth-child(1),
+body section.pop.share_before > div > div > div > div > p:nth-child(1),
+html section.pop.share_before > div > div > div > div > p:nth-child(2),
+body section.pop.share_before > div > div > div > div > p:nth-child(2) {
+  font-size: .32rem;
+  color: #932322;
+}
+html section.pop.share_before > div > div > div > div > p:nth-child(2),
+body section.pop.share_before > div > div > div > div > p:nth-child(2) {
+  margin-bottom: .5rem;
+  display: flex;
+  align-items: center;
+}
+html section.pop.share_before > div > div > div > div > p:nth-child(2) > img,
+body section.pop.share_before > div > div > div > div > p:nth-child(2) > img {
+  width: .6rem;
+}
+html section.pop.share_before > div > div > div > div > p:nth-child(5) > span,
+body section.pop.share_before > div > div > div > div > p:nth-child(5) > span {
+  font-size: .32rem;
+  color: #932322;
+  font-weight: bolder;
+}
+html section.pop.share_before > a,
+body section.pop.share_before > a {
+  margin: .5rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.86rem;
+  height: .8rem;
+  font-size: .32rem;
+  color: #e4ceae;
+  background-color: #264ba0;
+  font-weight: bolder;
+}
+html section.pop.share,
+body section.pop.share {
+  display: none;
+  top: 0rem;
+}
+html section.pop.share > div:nth-child(1),
+body section.pop.share > div:nth-child(1) {
+  position: relative;
+  width: 5.5rem;
+  height: 1.3rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+html section.pop.share > div:nth-child(1) > div,
+body section.pop.share > div:nth-child(1) > div {
+  width: 5.85rem;
+  height: 1.02rem;
+  background: url('../images/share_01.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+html section.pop.share > div:nth-child(2) > div,
+body section.pop.share > div:nth-child(2) > div {
+  width: 5.5rem;
+  margin: 0 auto;
+}
+html section.pop.share > div:nth-child(2) > div > div > div > div:nth-child(1),
+body section.pop.share > div:nth-child(2) > div > div > div > div:nth-child(1) {
+  width: 4.27rem;
+  margin: 0 auto;
+}
+html section.pop.share > div:nth-child(2) > div > div > div > div:nth-child(1) img,
+body section.pop.share > div:nth-child(2) > div > div > div > div:nth-child(1) img {
+  width: 4.27rem;
+}
+html section.pop.share > div:nth-child(2) > div > div > div > div:nth-child(2) > p,
+body section.pop.share > div:nth-child(2) > div > div > div > div:nth-child(2) > p {
+  font-size: .32rem;
+  font-weight: bolder;
+  width: 4.27rem;
+  margin: .2rem 0;
+  display: flex;
+  align-items: center;
+  padding-left: .5rem;
+  box-sizing: border-box;
+}
+html section.pop.share > div:nth-child(2) > div > div > div > div:nth-child(2) > img,
+body section.pop.share > div:nth-child(2) > div > div > div > div:nth-child(2) > img {
+  width: 4rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+html section.pop.share > div:nth-child(2) > div > div > div > div:nth-child(3),
+body section.pop.share > div:nth-child(2) > div > div > div > div:nth-child(3) {
+  width: 4.48rem;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: .2rem 0;
+  box-sizing: border-box;
+}
+html section.pop.share > div:nth-child(2) > div > div > div > div:nth-child(3) > div:nth-child(1),
+body section.pop.share > div:nth-child(2) > div > div > div > div:nth-child(3) > div:nth-child(1) {
+  font-size: .24rem;
+  font-weight: bolder;
+}
+html section.pop.share > div:nth-child(2) > div > div > div > div:nth-child(3) > div:nth-child(1) > p,
+body section.pop.share > div:nth-child(2) > div > div > div > div:nth-child(3) > div:nth-child(1) > p {
+  line-height: .45rem;
+}
+html section.pop.share > div:nth-child(3),
+body section.pop.share > div:nth-child(3) {
+  font-size: .28rem;
+  color: #e8cba6;
+  text-align: center;
+  margin-top: .1rem;
+}
+html section.pop.send_fri,
+body section.pop.send_fri {
+  display: none;
+}
+html section.pop.send_fri > div,
+body section.pop.send_fri > div {
+  width: 5.5rem;
+  margin: 0 auto;
+}
+html section.pop.send_fri > div > div > div,
+body section.pop.send_fri > div > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: .65rem;
+}
+html section.pop.send_fri > div > div > div > img,
+body section.pop.send_fri > div > div > div > img {
+  width: 4.23rem;
+  margin-bottom: .4rem;
+}
+html section.pop.send_fri > div > div > div > p,
+body section.pop.send_fri > div > div > div > p {
+  font-size: .24rem;
+  color: #333;
+  line-height: .45rem;
+}
+html section.pop.send_fri > div > div > div > p:nth-child(6) > span,
+body section.pop.send_fri > div > div > div > p:nth-child(6) > span {
+  font-weight: bolder;
+  color: #c53034;
+}
+html section.pop.send_fri > div > div > div > p:nth-child(7),
+body section.pop.send_fri > div > div > div > p:nth-child(7) {
+  width: 1.58rem;
+  height: 2.25rem;
+  background: url(../images/mainflower_01.png) no-repeat;
+  background-size: cover;
+  margin-top: .25rem;
+}
+html section.pop.send_fri > a,
+body section.pop.send_fri > a {
+  display: inline-block;
+  width: 2.86rem;
+  height: .8rem;
+  color: #e4ceae;
+  background-color: #c53034;
+  text-align: center;
+  font-size: .24rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .6rem auto 0;
+  font-weight: bolder;
+}
+html section.pop.unling,
+body section.pop.unling {
+  display: none;
+}
+html section.pop.unling > div:nth-child(1),
+body section.pop.unling > div:nth-child(1) {
+  width: 5.5rem;
+  margin: 0 auto;
+  height: 5rem;
+}
+html section.pop.unling > div:nth-child(1) > div,
+body section.pop.unling > div:nth-child(1) > div {
+  height: 100%;
+}
+html section.pop.unling > div:nth-child(1) > div > div,
+body section.pop.unling > div:nth-child(1) > div > div {
+  height: 100%;
+}
+html section.pop.unling > div:nth-child(1) > div > div > div,
+body section.pop.unling > div:nth-child(1) > div > div > div {
+  height: 100%;
+}
+html section.pop.unling > div:nth-child(1) > div > div > div > p,
+body section.pop.unling > div:nth-child(1) > div > div > div > p {
+  font-size: .24rem;
+  line-height: .5rem;
+  text-align: center;
+}
+html section.pop.unling > div:nth-child(1) > div > div > div > p:nth-child(1) > img,
+body section.pop.unling > div:nth-child(1) > div > div > div > p:nth-child(1) > img {
+  width: 4.27rem;
+}
+html section.pop.unling > div:nth-child(1) > div > div > div > p:nth-child(4),
+body section.pop.unling > div:nth-child(1) > div > div > div > p:nth-child(4) {
+  margin-top: .5rem;
+}
+html section.pop.unling > div:nth-child(1) > div > div > div > p:nth-child(6) > span,
+body section.pop.unling > div:nth-child(1) > div > div > div > p:nth-child(6) > span {
+  font-size: .32rem;
+  color: #932322;
+  font-weight: bolder;
+}
+html section.pop.unling > div:nth-child(2),
+body section.pop.unling > div:nth-child(2) {
+  margin: .5rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.86rem;
+  height: .8rem;
+  font-size: .32rem;
+  color: #e4ceae;
+  background-color: #264ba0;
+  font-weight: bolder;
+}
+html section.pop.sex_name,
+body section.pop.sex_name {
+  display: none;
+}
+html section.pop.sex_name > div:nth-child(1),
+body section.pop.sex_name > div:nth-child(1) {
+  width: 5.5rem;
+  margin: 0 auto;
+  height: 5rem;
+}
+html section.pop.sex_name > div:nth-child(1) > div,
+body section.pop.sex_name > div:nth-child(1) > div {
+  height: 100%;
+}
+html section.pop.sex_name > div:nth-child(1) > div > div,
+body section.pop.sex_name > div:nth-child(1) > div > div {
+  height: 100%;
+}
+html section.pop.sex_name > div:nth-child(1) > div > div > div,
+body section.pop.sex_name > div:nth-child(1) > div > div > div {
+  height: 100%;
+}
+html section.pop.sex_name > div:nth-child(1) > div > div > div > p,
+body section.pop.sex_name > div:nth-child(1) > div > div > div > p {
+  font-size: .24rem;
+  line-height: .5rem;
+  text-align: center;
+}
+html section.pop.sex_name > div:nth-child(1) > div > div > div > p > img,
+body section.pop.sex_name > div:nth-child(1) > div > div > div > p > img {
+  width: 4.27rem;
+}
+html section.pop.sex_name > div:nth-child(1) > div > div > div > p:nth-child(2),
+body section.pop.sex_name > div:nth-child(1) > div > div > div > p:nth-child(2) {
+  height: 3rem;
+  line-height: 3rem;
+  font-size: .32rem;
+  color: #932322;
+  font-weight: bolder;
+  text-align: center;
+}
+html section.pop.sex_name > div:nth-child(2),
+body section.pop.sex_name > div:nth-child(2) {
+  margin: .5rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.86rem;
+  height: .8rem;
+  font-size: .32rem;
+  color: #e4ceae;
+  background-color: #932322;
+  font-weight: bolder;
+}
+html section.pop.tc-1,
+body section.pop.tc-1 {
+  display: none;
+  width: 5.5rem;
+  height: 6.08rem;
+}
+html section.pop.tc-1 > div > div > div,
+body section.pop.tc-1 > div > div > div {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: 6.08rem;
+}
+html section.pop.tc-1 > div > div > div p,
+body section.pop.tc-1 > div > div > div p {
+  font-size: .24rem;
+  text-align: center;
+  line-height: 2em;
+  color: #333;
+}
+html section.pop.tc-1 > div > div > div p:nth-child(1) > img,
+body section.pop.tc-1 > div > div > div p:nth-child(1) > img {
+  width: 4.27rem;
+  margin: 0  auto;
+}
+html section.pop.tc-1 > div > div > div p:nth-child(3),
+body section.pop.tc-1 > div > div > div p:nth-child(3) {
+  color: #c22528;
+}
+html section.pop.tc-1 > div > div > div p:nth-child(5),
+body section.pop.tc-1 > div > div > div p:nth-child(5) {
+  margin-top: .5rem;
+}
+html section.pop.tc-1 > div > div > div p:nth-child(4) span:last-child,
+body section.pop.tc-1 > div > div > div p:nth-child(4) span:last-child {
+  color: #c22528;
+}
+html section.pop.tc-1 > div > div > div p:nth-child(2),
+body section.pop.tc-1 > div > div > div p:nth-child(2),
+html section.pop.tc-1 > div > div > div p:nth-child(3),
+body section.pop.tc-1 > div > div > div p:nth-child(3),
+html section.pop.tc-1 > div > div > div p:nth-child(4),
+body section.pop.tc-1 > div > div > div p:nth-child(4) {
+  font-weight: bolder;
+}
+html section.pop.tc-1 > div > div > div a,
+body section.pop.tc-1 > div > div > div a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: .13rem;
+  margin: auto;
+  width: 4.8rem;
+  height: 1.34rem;
+  background: url(../images/cm_10GB.gif) center no-repeat;
+  background-size: cover;
+}
+html section.pop.tc-1 > a,
+body section.pop.tc-1 > a {
+  margin: .5rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.86rem;
+  height: .8rem;
+  font-size: .32rem;
+  color: #e4ceae;
+  background-color: #264ba0;
+  font-weight: bolder;
+}
+html section.pop.tc-2,
+body section.pop.tc-2,
+html section.pop.tc-4,
+body section.pop.tc-4 {
+  display: none;
+}
+html section.pop.tc-2 > div,
+body section.pop.tc-2 > div,
+html section.pop.tc-4 > div,
+body section.pop.tc-4 > div {
+  margin: 0 auto;
+}
+html section.pop.tc-2 > div:nth-child(1),
+body section.pop.tc-2 > div:nth-child(1),
+html section.pop.tc-4 > div:nth-child(1),
+body section.pop.tc-4 > div:nth-child(1) {
+  background-color: #264ba0;
+  font-size: .3rem;
+  box-sizing: border-box;
+  padding: .1rem;
+  width: 5.5rem;
+  height: 4.38rem;
+}
+html section.pop.tc-2 > div:nth-child(1) > div,
+body section.pop.tc-2 > div:nth-child(1) > div,
+html section.pop.tc-4 > div:nth-child(1) > div,
+body section.pop.tc-4 > div:nth-child(1) > div {
+  height: 100%;
+  background: url('../images/bg_01.png') no-repeat;
+  background-size: cover;
+  padding: .1rem;
+  box-sizing: border-box;
+}
+html section.pop.tc-2 > div:nth-child(1) > div > div,
+body section.pop.tc-2 > div:nth-child(1) > div > div,
+html section.pop.tc-4 > div:nth-child(1) > div > div,
+body section.pop.tc-4 > div:nth-child(1) > div > div {
+  background: url('../images/bg_02.png') no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-top: .2rem;
+  border: solid .02rem #264ba0;
+  height: 100%;
+  text-align: center;
+}
+html section.pop.tc-2 > div:nth-child(1) > div > div > img,
+body section.pop.tc-2 > div:nth-child(1) > div > div > img,
+html section.pop.tc-4 > div:nth-child(1) > div > div > img,
+body section.pop.tc-4 > div:nth-child(1) > div > div > img {
+  width: 4.27rem;
+  margin: 0 auto;
+}
+html section.pop.tc-2 > div:nth-child(1) > div > div > div,
+body section.pop.tc-2 > div:nth-child(1) > div > div > div,
+html section.pop.tc-4 > div:nth-child(1) > div > div > div,
+body section.pop.tc-4 > div:nth-child(1) > div > div > div {
+  font-size: .24rem;
+  margin-top: .2rem;
+}
+html section.pop.tc-2 > div:nth-child(1) > div > div > div > p,
+body section.pop.tc-2 > div:nth-child(1) > div > div > div > p,
+html section.pop.tc-4 > div:nth-child(1) > div > div > div > p,
+body section.pop.tc-4 > div:nth-child(1) > div > div > div > p {
+  line-height: .54rem;
+  font-weight: bolder;
+}
+html section.pop.tc-2 > div:nth-child(1) > div > div > div > p:nth-child(2),
+body section.pop.tc-2 > div:nth-child(1) > div > div > div > p:nth-child(2),
+html section.pop.tc-4 > div:nth-child(1) > div > div > div > p:nth-child(2),
+body section.pop.tc-4 > div:nth-child(1) > div > div > div > p:nth-child(2) {
+  color: #c22528;
+}
+html section.pop.tc-2 > div:nth-child(1) > div > div > div > p:nth-child(3) > span,
+body section.pop.tc-2 > div:nth-child(1) > div > div > div > p:nth-child(3) > span,
+html section.pop.tc-4 > div:nth-child(1) > div > div > div > p:nth-child(3) > span,
+body section.pop.tc-4 > div:nth-child(1) > div > div > div > p:nth-child(3) > span {
+  color: #c22528;
+}
+html section.pop.tc-2 > div:nth-child(1) > div > div > p,
+body section.pop.tc-2 > div:nth-child(1) > div > div > p,
+html section.pop.tc-4 > div:nth-child(1) > div > div > p,
+body section.pop.tc-4 > div:nth-child(1) > div > div > p {
+  font-size: .24rem;
+  margin-top: .3rem;
+}
+html section.pop.tc-2 > div:nth-child(2),
+body section.pop.tc-2 > div:nth-child(2),
+html section.pop.tc-4 > div:nth-child(2),
+body section.pop.tc-4 > div:nth-child(2) {
+  width: 5.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: .8rem;
+}
+html section.pop.tc-2 > div:nth-child(2) > a,
+body section.pop.tc-2 > div:nth-child(2) > a,
+html section.pop.tc-4 > div:nth-child(2) > a,
+body section.pop.tc-4 > div:nth-child(2) > a {
+  display: inline-block;
+  width: 2.56rem;
+  height: .8rem;
+  box-sizing: border-box;
+  font-size: .32rem;
+  font-weight: bolder;
+  text-align: center;
+}
+html section.pop.tc-2 > div:nth-child(2) > a:nth-child(1),
+body section.pop.tc-2 > div:nth-child(2) > a:nth-child(1),
+html section.pop.tc-4 > div:nth-child(2) > a:nth-child(1),
+body section.pop.tc-4 > div:nth-child(2) > a:nth-child(1) {
+  border: solid .04rem #264ba0;
+  background-color: #e1c9a6;
+  color: #264ba0;
+  line-height: .72rem;
+}
+html section.pop.tc-2 > div:nth-child(2) > a:nth-child(2),
+body section.pop.tc-2 > div:nth-child(2) > a:nth-child(2),
+html section.pop.tc-4 > div:nth-child(2) > a:nth-child(2),
+body section.pop.tc-4 > div:nth-child(2) > a:nth-child(2) {
+  background-color: #264ba0;
+  color: #e1c9a6;
+  line-height: .8rem;
+}
+html section.pop.tc-3,
+body section.pop.tc-3 {
+  display: none;
+}
+html section.pop.tc-3 > div,
+body section.pop.tc-3 > div {
+  width: 5.5rem;
+  height: 4.37rem;
+  margin: 0 auto;
+  font-size: .24rem;
+  text-align: center;
+}
+html section.pop.tc-3 > div > div,
+body section.pop.tc-3 > div > div {
+  height: 100%;
+}
+html section.pop.tc-3 > div > div > div,
+body section.pop.tc-3 > div > div > div {
+  height: 100%;
+}
+html section.pop.tc-3 > div > div > div p:nth-child(1),
+body section.pop.tc-3 > div > div > div p:nth-child(1) {
+  width: 4.27rem;
+  margin: 0 auto;
+}
+html section.pop.tc-3 > div > div > div p:nth-child(1) img,
+body section.pop.tc-3 > div > div > div p:nth-child(1) img {
+  width: 4.27rem;
+}
+html section.pop.tc-3 > div > div > div p:nth-child(2),
+body section.pop.tc-3 > div > div > div p:nth-child(2) {
+  font-size: .24rem;
+  text-align: center;
+  margin: .4rem auto;
+  font-weight: bolder;
+}
+html section.pop.tc-3 > div > div > div > div,
+body section.pop.tc-3 > div > div > div > div {
+  margin: 0 auto .4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 4.8rem;
+}
+html section.pop.tc-3 > div > div > div > div p,
+body section.pop.tc-3 > div > div > div > div p {
+  font-size: .27rem;
+  color: #761a19;
+  font-weight: bolder;
+}
+html section.pop.tc-3 > div > div > div > div input,
+body section.pop.tc-3 > div > div > div > div input {
+  padding-left: 1rem;
+  box-sizing: border-box;
+  padding: 0 .2rem;
+  width: 3.27rem;
+  height: .66rem;
+  font-size: .24rem;
+  border: none;
+  background: url('../images/enter_01.png') no-repeat;
+  background-size: cover;
+}
+html section.pop.tc-3 > a,
+body section.pop.tc-3 > a {
+  margin: .5rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.86rem;
+  height: .8rem;
+  font-size: .32rem;
+  color: #e1c9a6;
+  background-color: #264ba0;
+  font-weight: bolder;
+}
+html section.pop.tc-4,
+body section.pop.tc-4 {
+  display: none;
+}
+html section.pop.tc-4 > div:nth-child(1),
+body section.pop.tc-4 > div:nth-child(1) {
+  height: 6.07rem;
+}
+html section.pop.tc-4 > div:nth-child(1) > div > div > p,
+body section.pop.tc-4 > div:nth-child(1) > div > div > p {
+  margin-top: 0;
+}
+html section.pop.tc-4 > div:nth-child(1) > div > div > p img,
+body section.pop.tc-4 > div:nth-child(1) > div > div > p img {
+  width: 4.27rem;
+}
+html section.pop.tc-4 > div:nth-child(1) > div > div > p > span,
+body section.pop.tc-4 > div:nth-child(1) > div > div > p > span {
+  display: inline-block;
+  width: 4.26rem;
+  height: 1.06rem;
+  background: url('../images/tc_03.png') no-repeat;
+  background-size: cover;
+  margin-top: .2rem;
+}
+html section.pop.tc-4 > div:nth-child(1) > div > div > div,
+body section.pop.tc-4 > div:nth-child(1) > div > div > div {
+  margin: 0 auto .2rem;
+}
+html section.pop.tc-4 > div:nth-child(1) > div > div > div p:nth-child(2),
+body section.pop.tc-4 > div:nth-child(1) > div > div > div p:nth-child(2) {
+  color: #333;
+}
+html section.pop.tc-4 > div:nth-child(1) > div > div > div p:nth-child(2) span,
+body section.pop.tc-4 > div:nth-child(1) > div > div > div p:nth-child(2) span {
+  color: #c22528;
+}
+html section.pop.tc-4 > div:nth-child(1) > div > div > div p:nth-child(4),
+body section.pop.tc-4 > div:nth-child(1) > div > div > div p:nth-child(4) {
+  color: #c22528;
+}
+html section.pop.tc-5,
+body section.pop.tc-5 {
+  display: none;
+  width: 5.5rem;
+  height: 6.08rem;
+}
+html section.pop.tc-5 > div > div > div,
+body section.pop.tc-5 > div > div > div {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: 6.08rem;
+}
+html section.pop.tc-5 > div > div > div p,
+body section.pop.tc-5 > div > div > div p {
+  font-size: .24rem;
+  text-align: center;
+  line-height: 2em;
+  color: #333;
+}
+html section.pop.tc-5 > div > div > div p:nth-child(1) > img,
+body section.pop.tc-5 > div > div > div p:nth-child(1) > img {
+  width: 4.27rem;
+  margin: 0  auto;
+}
+html section.pop.tc-5 > div > div > div p:nth-child(3) > span,
+body section.pop.tc-5 > div > div > div p:nth-child(3) > span {
+  color: #c22528;
+}
+html section.pop.tc-5 > div > div > div p:nth-child(5) > span,
+body section.pop.tc-5 > div > div > div p:nth-child(5) > span {
+  color: #c22528;
+}
+html section.pop.tc-5 > div > div > div p:nth-child(6),
+body section.pop.tc-5 > div > div > div p:nth-child(6) {
+  margin-top: .3rem;
+}
+html section.pop.tc-5 > div > div > div p:nth-child(2),
+body section.pop.tc-5 > div > div > div p:nth-child(2),
+html section.pop.tc-5 > div > div > div p:nth-child(3),
+body section.pop.tc-5 > div > div > div p:nth-child(3),
+html section.pop.tc-5 > div > div > div p:nth-child(4),
+body section.pop.tc-5 > div > div > div p:nth-child(4),
+html section.pop.tc-5 > div > div > div p:nth-child(5),
+body section.pop.tc-5 > div > div > div p:nth-child(5) {
+  font-weight: bolder;
+}
+html section.pop.tc-5 > div > div > div a,
+body section.pop.tc-5 > div > div > div a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: .13rem;
+  margin: auto;
+  width: 4.8rem;
+  height: 1.34rem;
+  background: url('../images/cm_10GB.gif') center no-repeat;
+  background-size: cover;
+}
+html section.pop.tc-5 > a,
+body section.pop.tc-5 > a {
+  margin: .5rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.86rem;
+  height: .8rem;
+  font-size: .32rem;
+  color: #e4ceae;
+  background-color: #264ba0;
+  font-weight: bolder;
+}
+html .tcstyle > div,
+body .tcstyle > div {
+  background-color: #264ba0;
+  font-size: .3rem;
+  box-sizing: border-box;
+  padding: .1rem;
+}
+html .tcstyle > div > div,
+body .tcstyle > div > div {
+  background: url('../images/bg_01.png') no-repeat;
+  background-size: cover;
+  padding: .1rem;
+  box-sizing: border-box;
+}
+html .tcstyle > div > div > div,
+body .tcstyle > div > div > div {
+  background: url('../images/bg_02.png') no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-top: .2rem;
+  border: solid .02rem #264ba0;
+}
+html section.mask,
+body section.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+}
+html .frame,
+body .frame {
+  background-color: #932322;
+  font-size: .3rem;
+  box-sizing: border-box;
+  padding: .1rem;
+}
+html .frame > div,
+body .frame > div {
+  background: url('../images/bg_01.png') no-repeat;
+  background-size: cover;
+  padding: .1rem;
+  box-sizing: border-box;
+}
+html .frame > div > div,
+body .frame > div > div {
+  background: url('../images/bg_02.png') no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-top: .2rem;
+  border: solid 2px #932322;
+}
+html .lottery,
+body .lottery {
+  margin: .2rem 0;
+  width: 1.7rem;
+  height: .75rem;
+  background: url(../images/main_btn.png) no-repeat;
+  background-size: cover;
+  color: #e3bda4;
+  font-size: .24rem;
+  line-height: .6rem;
+  text-align: center;
+  z-index: 2;
+}
+section.loader {
+  font-size: 14px;
+}
+section.loader > div {
+  padding-top: 50%;
+}
+section.loader > div:nth-child(1) {
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 2em;
+  text-align: center;
+  font-style: italic;
+  color: #f9d0a3;
+}
+section.loader > div:nth-child(2) {
+  box-sizing: border-box;
+  padding: 2px;
+  margin: 0 auto;
+  width: 15em;
+  height: .5em;
+  background-color: #dbf3d2;
+  border-radius: .4em;
+}
+section.loader > div:nth-child(2) div {
+  width: 30%;
+  height: .24em;
+  border-radius: .4em;
+  background-color: #f9d0a3;
+}
+#qrcode {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+#attention_code img {
+  width: 3.8rem;
+  height: 3.8rem;
+}
+.fontsize {
+  font-size: .28rem;
+  font-weight: bolder;
+}
+.clickios {
+  cursor: pointer;
+}
+* {
+  touch-action: pan-y;
+}

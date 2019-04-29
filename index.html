@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>北京移动</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <!-- <link rel="stylesheet/less" href="css/styles.less"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <script src="js/less-1.7.0.min.js"></script> -->
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/html2canvas.min.js"  ></script>
+    <script src="js/qrcode.min.js"></script>
+    <script src="js/imgLoader.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script>
+       imgLoader([
+            'images/bg_01.png',
+            'images/bg_02.png',
+            'images/bind_01.png',
+            'images/bind_02.jpg',
+            'images/bind_03.png',
+            'images/enter_01.png',
+            'images/enter_02.png',
+            'images/enter_03.png',
+            'images/firend_02.png',
+            'images/flower_hui.png',
+            'images/flower_red.png',
+            'images/friend_01.png',
+            'images/glory_01.png',
+            'images/glory_02.png',
+            'images/guanggo_01.png',
+            'images/home_01.png',
+            'images/home_02.png',
+            'images/home_03.png',
+            'images/home_03_01.png',
+            'images/main_01.png',
+            'images/main_02.png',
+            'images/main_banner.gif',
+            'images/main_biao.png',
+            'images/main_btn.png',
+            'images/main_btnh.png',
+            'images/mainflower_01.png',
+            'images/mainflower_02.png',
+            'images/mainflower_03.png',
+            'images/00.jpg',
+            'images/01.jpg',
+            'images/02.jpg',
+            'images/03.jpg',
+            'images/04.jpg',
+            'images/05.jpg',
+            'images/06.jpg',
+            'images/07.jpg',
+            'images/08.jpg',
+            'images/09.jpg',
+            'images/10.jpg',
+            'images/11.jpg',
+            'images/12.jpg',
+            'images/13.jpg',
+            'images/14.jpg',
+            'images/15.jpg',
+            'images/return.png',
+            'images/rule_bg.png',
+            'images/rule.png',
+            'images/share_01.png',
+            'images/start.png',
+            'images/tc_03.png',
+            'images/cq_qita.gif',
+            'images/cm_10GB.gif',
+            'images/cm_yidongw.gif',
+            'images/yi_wuxian.gif',
+            'images/cm_handt.gif',
+            'images/yi_kuandai.png',
+            'images/share_01.png'
+        ], function (percentage) {
+            var percentT = percentage * 100;
+            $('.loader_info').html('Loading ' + (parseInt(percentT)) + '%');
+            $('.loader_progress')[0].style.width = percentT + '%';
+            if (percentage == 1) {
+                $('.loader').remove();
+                var islogin = localStorage.getItem('islogin')
+                if (islogin != null) {
+                    if (getQueryVariable('test') != 1) {
+                        $('.home').hide()
+                        $('.glory').show()
+                    } else {
+                        $('.home').show()
+                    }
+                } else {
+                    $('.home').show()
+                    localStorage.setItem('islogin',1)
+                }
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 测试按钮 -->
+    <button style="position:absolute;z-index:300;top:.5rem;font-weight:bolder; font-size:.24rem;" href="#" class="test2 clickios" >没有关注公众号</button>
+    <button style="position:absolute;z-index:300;top:1rem;font-weight:bolder; font-size:.24rem;" href="#" class="test3 clickios">没有绑定用户</button>
+    <button style="position:absolute;z-index:300;top:1.5rem;font-weight:bolder; font-size:.24rem;" href="#" class="test4 clickios">异网用户</button>
+    <button style="position:absolute;z-index:300;top:2rem;font-weight:bolder; font-size:.24rem;" href="#" class="test_number_flower test6 clickios">5朵小红花</button>
+    <button style="position:absolute;z-index:300;top:2.5rem;font-weight:bolder; font-size:.24rem;" href="#" class="test_number_flower test7 clickios">8朵小红花</button>
+    <button style="position:absolute;z-index:300;top:3rem;font-weight:bolder; font-size:.24rem;" href="#" class="test8">恢复首次登陆</button>
+     <!--loading-->
+     <section class="loader">
+        <div class="loader_info"></div>
+        <div>
+            <div class="loader_progress"></div>
+        </div>
+    </section>
+    <!-- 首页(开始) -->
+    <section class="home">
+        <div>
+        </div>
+        <div>
+             <div></div>
+            <a href="javascript:void(0);" id="start"></a>
+        </div>
+    </section>
+    <!-- 输入名字（去测试） -->
+    <section class="enter">
+        <div></div>
+        <div>
+            <div>
+                <input type="text" placeholder="请输入您的名字" class="name">
+                <div class="radio_selected">
+                    <div>
+                        <div>
+                            <span></span>
+                        </div>
+                        <label for="">男</label>
+                    </div>
+                    <div>
+                        <!-- class="select_radio" -->
+                        <div>
+                            <span></span>
+                        </div>
+                        <label for="">女</label>
+                    </div>
+                
+                </div>
+                <a href="javascript:void(0);" id="start_test"></a>
+            </div>
+        </div>
+        <div></div>
+        <a href="javascript:void(0);" class="go_rule"></a>
+    </section>
+    <!-- 主页-->
+    <section class="main frame">
+        <div>
+            <div>
+                <div><a href="https://mp.weixin.qq.com/s/hBavjFzbSB6lY8LwL3C9bg"></a></div>
+                <div>
+                    <span></span>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <p></p>
+                            <p class="lottery one_flower">点击抽取</p>
+                        </li>
+                        <li>
+                            <p></p>
+                            <p class="lottery five_flower">点击抽取</p>
+                        </li>
+                        <li>
+                            <p></p>
+                            <p class="lottery eight_flower">点击抽取</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <p>5月1日</p>
+                            <p><span>200</span>GB</p>
+                        </li>
+                        <li>
+                            <p>5月1日</p>
+                            <p><span>200</span>GB</p>
+                        </li>
+                        <li>
+                            <p>5月1日</p>
+                            <p><span>200</span>GB</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="return"></div>
+                <div></div>
+            </div>
+        </div>
+    </section>
+    <!-- xxx是劳模 -->
+    <section class="frame glory">
+        <div>
+            <div>
+                <div>
+                    <a href="javascript:void(0);"></a>
+                </div>
+                <div class="share_detail">
+                    <p>
+                        <span>输入昵称</span>
+                        <span> 被评为：</span> 
+                    </p>
+                    <img src="./images/00.jpg" alt="" srcset="">
+                </div>
+                <div>
+                    <ul class="small_flower">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p>
+                        <span class="show_flower">0</span>朵</p>
+                </div>
+                <div>
+                    <a href="javaScript:void(0)" class="get_flower">    点亮荣誉小红花</a>
+                    <a href="javaScript:void(0)" class="highest_ext">抽取最高5.1GB</a>
+                </div>
+                <div>
+                    <div></div>
+                    <div>
+                        <p>昵称</p>
+                        <p>时间</p>
+                        <p>点亮</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <p>好友1</p>
+                                <p>5月12日</p>
+                                <p>
+                                    <span>1</span>朵小红花</p>
+                            </li>
+                            <li>
+                                <p>好友2</p>
+                                <p>5月12日</p>
+                                <p>
+                                    <span>3</span>朵小红花</p>
+                            </li>
+                            <li>
+                                <p>好友3</p>
+                                <p>5月12日</p>
+                                <p><span>1</span>朵小红花</p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a href="javascript:void(0);"class="go_rule"></a>
+    </section>
+    <!-- 活动规则 -->
+    <section class="rule">
+        <div></div>
+        <div class="frame">
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <p class="fontsize">一 活动时间：</p> 
+                                    <p>即日起—5月5日</p>
+                                </li>
+                                
+                                <li>
+                                    <p  class="fontsize">二 活动介绍：</p> 
+                                    <p>活动期间，用户通过北京移动微信公众号，可参与“点亮小红花 表彰抽大奖”活动。用户输入名字并选择性别后，可选择代表自己的劳动品格并生成荣誉海报。为自己的劳动品格争取荣誉小红花，就有机会抽奖赢流量：当点亮第1朵、第5朵和第8朵荣誉小红花时，即可获得抽奖机会，每位用户最多可参与3次抽奖。
+                                        点亮荣誉小红花的方法：
+                                    </p>
+                                    <p>1、用户首次可免费为自己点亮一个荣誉小红花。</p>
+                                    <p>2、把活动发送给好友，或者发送自己的荣誉海报，均可邀请好友为自己点亮荣誉小红花。（好友助力次数不限，但为同一用户仅可助力一次）。</p> 
+                                </li>
+                                <li >
+                                    <p class="fontsize">三 奖品规则：</p> 
+                                    <p>活动奖品包含：100MB、200MB、500MB、1GB、2GB、5.1GB全国流量，及部分免费业务体验资格、优惠业务办理资格。</p>
+                                    <p>1.	流量档位包括100MB、200MB、500MB、1GB、2GB、5.1GB全国流量；</p>
+                                    <p>2.	奖品将于领取后15日内，自动充入用户的微信关注绑定手机号，流量自充入日起生效，有效期7天；</p>
+                                    <p>3.	活动赠送套外国内流量，优先级高于主套餐、可选包、短促包、定向流量包等，赠送流量无法共享，不可结转；</p>
+                                    <p>4.	处于保留期、保号期、挂失、申停、欠停、转品牌过渡期的手机号；物联网卡、4G超级日租卡套餐、神州行开心听、语音套餐卡、神州行B标准资费基本策划等特殊资费用户无法领取赠送流量；</p>
+                                    <p>5.	赠送流量每月仅可领取100次，超出上限不可领取。</p>
+                                    <p>6.	北京移动用户抽中流量奖品后，自动充入关注绑定账户。非北京移动用户抽中流量奖品后可以转赠给北京移动手机号码。</p>
+                                    <p>（二）其它奖品</p>
+                                    <p>规则详见各奖品办理页面</p> 
+                                </li>
+                                <li>
+                                    <p>温馨提示：</p>
+                                    <p>温馨提示：活动将于5月5日结束，请您务必于活动结束前完成领奖，逾期视为自动放弃奖品。</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rule_close"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 绑定手机号 -->
+    <section class="bind">
+            <div></div>
+            <div>
+                <div class="frame">
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div>
+                                        <p>手机号</p>
+                                        <input type="text">
+                                    </div>
+                                    <div>
+                                        <p>验证码</p>
+                                        <input type="text">
+                                        <p></p>                                        
+                                    </div>
+                                    <div class="bind_submit"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- 劳模种类弹窗 -->
+    <section class="pop worker">
+        <div class="model_detail"><img src="./images/00.jpg" alt="" srcset=""></div>
+        <!-- <div class="frame">
+            <div>
+                <div>
+                    <div>
+                        <img src="./images/main_02.png" alt="" srcset="">
+                    </div>
+                    <div  class="model_detail">
+                        <p><span>小胖胖</span>是</p>
+                        <img src="./images/modeltype_01.png" alt="" srcset="">
+                        <p>介绍说明人物性格介绍说明人物性格介绍说明人物性格</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div>
+            <div>
+                <p>这不是我</p>
+                <button id='another' style="cursor:pointer">换一个</button>
+            </div>
+            <div>
+                <p>这就是我</p>
+                <button id="worker_sure" style="cursor:pointer">确定</button>
+            </div>
+        </div>  
+    </section>
+    <!-- 分享前的提示点亮小红花的弹窗 -->
+    <section class="pop tcstyle share_before">
+        <div>
+            <div>
+                <div>
+                    <p>
+                        <img src="./images/main_02.png" alt="" srcset="">
+                    </p>
+                    <div>
+                        <p>恭喜您成功点亮<br></p>
+                        <p>
+                            第一朵小红花
+                            <img src="./images/flower_red.png" alt="" srcset="">
+                        </p>
+                        <p>快来发送小伙伴</p>
+                        <p>帮助您点亮小红花</p>
+                        <p>点亮8朵更有机会抽取<span>5.1GB</span>流量！</p>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+        <a class="shareb_btn make-btn" href="javascript:void(0)">发送好友</a>
+    </section>
+    <!-- 分享 -->
+    <section class="pop share pictrue">
+        <div>
+            <div></div>
+        </div>
+        <div class="getimg">
+            <div class="frame" id="pic">
+                <div>
+                    <div>
+                        <div>
+                            <img src="./images/main_02.png" alt="" srcset="">
+                        </div>
+                        <div class="share_detail">
+                            <p>
+                                <span>输入昵称</span>
+                                <span>被评为：</span>
+                            </p>
+                            <img src="./images/00.jpg" alt="" srcset="">
+                        </div>
+                        <div>
+                            <div>  
+                                <p>快来看看你被评为</p>
+                                <p>哪个劳模称号吧～</p>
+                                <p>最高赢取5.1GB流量哦！</p>
+                            </div>
+                            <div id="qrcode"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>长按保存图片</div>
+        <img id="saveImg" alt="">
+    </section>
+    <!-- 本网获得流量弹窗 -->
+    <section class="pop tcstyle tc-1">
+        <div>
+            <div>
+                <div>
+                    <p>
+                        <img src="./images/main_02.png" alt="" srcset="">
+                    </p>
+                    <p>恭喜您的手机号</p>
+                    <p>xxxxxxxxxxx</p>
+                    <p>获得
+                        <span>500MB</span>全国流量</p>
+                    <p>流量将于15日内到账</p>
+                    <p>有效期：7天</p>
+                    <p>（流量到账后，立即生效）</p>
+                    <a href="javascript:void(0);" id="cm_aimg"></a>
+                </div>
+            </div>
+        </div>
+        <a class="close" href="javascript:void(0)">确定</a>
+    </section>
+    <!-- 异网流量弹窗 1-->
+    <section class="pop tc-2">
+        <div>
+            <div>
+                <div>
+                    <img src="./images/main_02.png" alt="" srcset="">
+                    <div>
+                        <p>恭喜您的手机号</p>
+                        <p>xxxxxxxxxxx</p>
+                        <p>获得
+                            <span> 500MB</span>全国流量</p>
+                        <p>您可以转赠到北京移动号码内 </p>
+                    </div>
+                    <p>（流量仅可在活动期间进行转赠）</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a class="close-2" href="javascript:void(0)">取消</a>
+            <a id="giveBtn" href="javascript:void(0)">转赠</a>
+        </div>
+    </section>
+    <!-- 异网流量弹窗 2 -->
+    <section class="pop tcstyle tc-3">
+        <div>
+            <div>
+                <div>
+                    <p>
+                        <img src="./images/main_02.png" alt="" srcset="">
+                    </p>
+                    <p>请输入好友北京移动手机号码</p>
+                    <div>
+                        <p>手机号码</p>
+                        <input id="inputTel" type="number" pattern="[0-9]*" oninput="if(value.length>11)value=value.slice(0,11)">
+                    </div>
+                    <p>（流量仅可在活动期间进行转赠）</p>
+                </div>
+            </div>
+        </div>
+        <a id="giveBtn_2" href="javascript:void(0)">确定</a>
+    </section>
+    <!-- 异网流量弹窗 3 -->
+    <section class="pop tc-4">
+        <div>
+            <div>
+                <div>
+                    <p>
+                        <img src="./images/main_02.png" alt="" srcset="">
+                        <span></span>
+                    </p>
+                    <div>
+                        <p>您是否将</p>
+                        <p>
+                            <span> 500MB</span>全国流量 </p>
+                        <p>转赠到手机号码</p>
+                        <p class="mobile"> xxxxxxxxxxx </p>
+                        <p> 账户中</p>
+                    </div>
+                    <p>（流量仅可在活动期间进行转赠）</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a id="revise" href="javascript:void(0)">修改</a>
+            <a id="giveBtn_3" href="javascript:void(0)">确认</a>
+        </div>
+    </section>
+    <!-- 异网流量弹窗 4 -->
+    <section class="pop tcstyle tc-5">
+        <div>
+            <div>
+                <div>
+                    <p>
+                        <img src="./images/main_02.png" alt="" srcset="">
+                    </p>
+                    <p>您已将</p>
+                    <p>
+                        <span class="flowerPrice">500MB</span>全国流量</p>
+                    <p>转赠到手机号码</p>
+                    <p>
+                        <span class="mobile"> xxxxxxxxxxx </span>账户中</p>
+                    <p>流量将于15日内到账</p>
+                    <p>有效期：7天</p>
+                    <p>（流量到账后，立即生效）</p>
+                    <a href="javascript:void(0);" id="yi_aimg"></a>
+                </div>
+            </div>
+        </div>
+        <a class="close" href="javascript:void(0)">确定</a>
+    </section>
+    <!-- 未抽奖的弹窗 -->
+    <section class="pop unling">
+        <div  class="tcstyle"> 
+            <div>
+                <div>
+                    <div>
+                        <p><img src="./images/main_02.png" alt=""> </p>
+                        <p>您还没有点亮</p>
+                        <p>第 <span id="unflower">5</span>朵小花花哦~</p>
+                        <p>快来发送小伙伴</p>
+                        <p>帮助您点亮小红花</p>
+                        <p>点亮8朵更有机会抽取<span>5.1GB</span>流量！</p>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="unsure make-btn">确定</div>
+    </section>
+    <!-- 输入姓名性别的弹窗 -->
+    <section class="pop sex_name">
+        <div  class="frame"> 
+            <div>
+                <div>
+                    <div>
+                        <p>
+                            <img src="./images/main_02.png" alt="">
+                        </p>
+                        <p class="prompt"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sex_btn">确定</div>
+    </section>
+    <!-- 遮罩层 -->
+    <section class="mask" id="mask"></section>
+    <script>
+        function erweima() {
+                var link = "http://www.baidu.com"     //其中link为需生成二维码的链接
+                var qrcode = new QRCode("qrcode", {
+                    text: link,
+                    width: 100,
+                    height: 100,
+                    // colorDark: "pink",
+                    // colorLight: "#ffffff",
+                    correctLevel: QRCode.CorrectLevel.H
+                });
+            }
+            erweima();
+       // new QRCode(document.getElementById("qrcode"), "http://www.baidu.com");
+    </script>
+</body>
+
+</html>
+<script src="js/index.js"></script>

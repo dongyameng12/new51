@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>北京移动</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <!-- <link rel="stylesheet/less" href="css/styles.less"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <script src="js/less-1.7.0.min.js"></script> -->
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/imgLoader.js"></script>
+    <script>
+        imgLoader([
+            'images/bg_01.png',
+            'images/bg_02.png',
+            'images/bind_01.png',
+            'images/bind_02.jpg',
+            'images/bind_03.png',
+            'images/enter_01.png',
+            'images/enter_02.png',
+            'images/enter_03.png',
+            'images/firend_02.png',
+            'images/flower_hui.png',
+            'images/flower_red.png',
+            'images/friend_01.png',
+            'images/glory_01.png',
+            'images/glory_02.png',
+            'images/guanggo_01.png',
+            'images/home_01.png',
+            'images/home_02.png',
+            'images/home_03.png',
+            'images/home_03_01.png',
+            'images/main_01.png',
+            'images/main_02.png',
+            'images/main_banner.gif',
+            'images/main_biao.png',
+            'images/main_btn.png',
+            'images/main_btnh.png',
+            'images/mainflower_01.png',
+            'images/mainflower_02.png',
+            'images/mainflower_03.png',
+            'images/modeltype_01.png',
+            'images/00.jpg',
+            'images/01.jpg',
+            'images/02.jpg',
+            'images/03.jpg',
+            'images/04.jpg',
+            'images/05.jpg',
+            'images/06.jpg',
+            'images/07.jpg',
+            'images/08.jpg',
+            'images/09.jpg',
+            'images/10.jpg',
+            'images/11.jpg',
+            'images/12.jpg',
+            'images/13.jpg',
+            'images/14.jpg',
+            'images/15.jpg',
+            'images/return.png',
+            'images/rule_bg.png',
+            'images/rule.png',
+            'images/share_01.png',
+            'images/start.png',
+            'images/tc_03.png',
+            'images/cq_qita.gif',
+            'images/cm_10GB.gif',
+            'images/cm_yidongw.gif',
+            'images/yi_wuxian.gif',
+            'images/cm_handt.gif',
+            'images/yi_kuandai.png',
+            'images/share_01.png'
+        ], function (percentage) {
+            var percentT = percentage * 100;
+            $('.loader_info').html('Loading ' + (parseInt(percentT)) + '%');
+            $('.loader_progress')[0].style.width = percentT + '%';
+            if (percentage == 1) {
+                $('.loader').remove();
+                $('.fri_home').show();
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <!--loading-->
+    <section class="loader">
+        <div class="loader_info"></div>
+        <div>
+            <div class="loader_progress"></div>
+        </div>
+    </section>
+    <!--好友入口-->
+    <section class="fri_home">
+        <div></div>
+        <div>
+            <div class="frame">
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <p>点亮小红花，争当荣誉模范</p>
+                            </div>
+                            <div>    
+                                <p>您的好友<span id="namefriend">xxxxxxxxxxxxxxxxxx</span></p>
+                                <p>正在参加“劳动模范表彰大会”活动</p>
+                                <p>邀请您为TA点亮一朵荣誉小红花</p>
+                                <p>就有机会赢取最高5.1GB流量哦~  </p>
+                            </div>
+                          
+                        </div>
+                        <div>
+                            <a href="javascript:void(0);" id="send"></a>
+                            <a href="javascript:void(0);" class="go_rule"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- 好友点亮窗口 -->
+    <section class="pop send_fri">
+        <div class="frame">
+            <div>
+                <div>
+                    <img src="./images/main_02.png" alt="">
+                    <p>成功为好友<span>xx</span></p>
+                    <p>点亮了一朵小花</p>
+                    <p>快来一起参加活动吧！</p>
+                    <p>看看你被评为哪个劳动称号呢？</p>
+                    <p> 还能赢取<span>5.1GB</span> 哦！</p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <a href="./index.html?test=1">去抽5.1GB</a>
+    </section>
+      <!-- 活动规则 -->
+      <section class="rule">
+            <div></div>
+            <div class="frame">
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <p class="fontsize">一 活动时间：</p> 
+                                        <p>即日起—5月5日</p>
+                                    </li>
+                                    
+                                    <li>
+                                        <p  class="fontsize">二 活动介绍：</p> 
+                                        <p>活动期间，用户通过北京移动微信公众号，可参与“点亮小红花 表彰抽大奖”活动。用户输入名字并选择性别后，可选择代表自己的劳动品格并生成荣誉海报。为自己的劳动品格争取荣誉小红花，就有机会抽奖赢流量：当点亮第1朵、第5朵和第8朵荣誉小红花时，即可获得抽奖机会，每位用户最多可参与3次抽奖。
+                                            点亮荣誉小红花的方法：
+                                        </p>
+                                        <p>1、用户首次可免费为自己点亮一个荣誉小红花。</p>
+                                        <p>2、把活动发送给好友，或者发送自己的荣誉海报，均可邀请好友为自己点亮荣誉小红花。（好友助力次数不限，但为同一用户仅可助力一次）。</p> 
+                                    </li>
+                                    <li >
+                                        <p class="fontsize">三 奖品规则：</p> 
+                                        <p>活动奖品包含：100MB、200MB、500MB、1GB、2GB、5.1GB全国流量，及部分免费业务体验资格、优惠业务办理资格。</p>
+                                        <p>1.	流量档位包括100MB、200MB、500MB、1GB、2GB、5.1GB全国流量；</p>
+                                        <p>2.	奖品将于领取后15日内，自动充入用户的微信关注绑定手机号，流量自充入日起生效，有效期7天；</p>
+                                        <p>3.	活动赠送套外国内流量，优先级高于主套餐、可选包、短促包、定向流量包等，赠送流量无法共享，不可结转；</p>
+                                        <p>4.	处于保留期、保号期、挂失、申停、欠停、转品牌过渡期的手机号；物联网卡、4G超级日租卡套餐、神州行开心听、语音套餐卡、神州行B标准资费基本策划等特殊资费用户无法领取赠送流量；</p>
+                                        <p>5.	赠送流量每月仅可领取100次，超出上限不可领取。</p>
+                                        <p>6.	北京移动用户抽中流量奖品后，自动充入关注绑定账户。非北京移动用户抽中流量奖品后可以转赠给北京移动手机号码。</p>
+                                        <p>（二）其它奖品</p>
+                                        <p>规则详见各奖品办理页面</p> 
+                                    </li>
+                                    <li>
+                                        <p>温馨提示：</p>
+                                        <p>温馨提示：活动将于5月5日结束，请您务必于活动结束前完成领奖，逾期视为自动放弃奖品。</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="rule_close"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- 遮罩层 -->
+    <section class="mask" id="mask"></section>
+</body>
+
+</html>
+<script src="js/friend.js"></script>
